@@ -1,8 +1,8 @@
 import { Agent, AgentTool, FunctionTool, GoogleSearchTool } from '@google/adk';
 import { z } from 'zod';
-import { workspaceAgent } from './workspaceAgent';
-import { config } from '../config';
-import { saveMemoryFact } from '../memory';
+import { workspaceAgent } from './workspaceAgent.js';
+import { config } from '../config.js';
+import { saveMemoryFact } from '../memory.js';
 
 // Tool to save a fact to the local memory bank
 export const saveFactTool = new FunctionTool({

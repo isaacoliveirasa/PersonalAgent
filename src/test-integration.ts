@@ -1,16 +1,7 @@
-import Module from 'module';
-const realRequire = Module.prototype.require;
-Module.prototype.require = function (this: any, id: string) {
-  if (id === 'lodash-es') {
-    return realRequire.call(this, 'lodash');
-  }
-  return realRequire.apply(this, arguments as any);
-} as any;
-
-import { kv } from './memory';
-import { getGoogleOAuthClient, listUpcomingEvents, listTodayEmails } from './google';
-import { sendTelegramMessage } from './telegram';
-import { orchestratorAgent } from './agents/orchestrator';
+import { kv } from './memory.js';
+import { getGoogleOAuthClient, listUpcomingEvents, listTodayEmails } from './google.js';
+import { sendTelegramMessage } from './telegram.js';
+import { orchestratorAgent } from './agents/orchestrator.js';
 import { InMemoryRunner } from '@google/adk';
 import dotenv from 'dotenv';
 

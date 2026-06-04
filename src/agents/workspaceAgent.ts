@@ -1,6 +1,6 @@
 import { Agent, FunctionTool } from '@google/adk';
 import { z } from 'zod';
-import { listUpcomingEvents, listTodayEmails, createGmailDraft } from '../google';
+import { listUpcomingEvents, listTodayEmails, createGmailDraft } from '../google.js';
 
 // Define the tool parameters using Zod
 const listCalendarParameters = z.object({
@@ -42,7 +42,7 @@ export const createDraftTool = new FunctionTool({
   }
 });
 
-import { config } from '../config';
+import { config } from '../config.js';
 
 // Initialize the Google Workspace Agent
 export const workspaceAgent = new Agent({

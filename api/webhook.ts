@@ -1,20 +1,11 @@
-import Module from 'module';
-const realRequire = Module.prototype.require;
-Module.prototype.require = function (this: any, id: string) {
-  if (id === 'lodash-es') {
-    return realRequire.call(this, 'lodash');
-  }
-  return realRequire.apply(this, arguments as any);
-} as any;
-
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { InMemoryRunner } from '@google/adk';
-import { validateSecretToken, isAllowedUser } from '../src/security';
-import { sendTelegramMessage, getTelegramFileUrl, downloadTelegramFile } from '../src/telegram';
-import type { TelegramUpdate } from '../src/telegram';
-import { orchestratorAgent } from '../src/agents/orchestrator';
-import { config } from '../src/config';
-import { getMemoryFacts } from '../src/memory';
+import { validateSecretToken, isAllowedUser } from '../src/security.js';
+import { sendTelegramMessage, getTelegramFileUrl, downloadTelegramFile } from '../src/telegram.js';
+import type { TelegramUpdate } from '../src/telegram.js';
+import { orchestratorAgent } from '../src/agents/orchestrator.js';
+import { config } from '../src/config.js';
+import { getMemoryFacts } from '../src/memory.js';
 
 // Global runner declaration to persist memory session state across consecutive webhook executions
 const runner = new InMemoryRunner({

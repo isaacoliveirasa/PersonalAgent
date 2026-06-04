@@ -1,5 +1,5 @@
 import https from 'https';
-import { config } from './config';
+import { config } from './config.js';
 
 export interface TelegramUser {
   id: number;

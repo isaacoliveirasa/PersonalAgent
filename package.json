@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Personal Assistant Bot running as Serverless Functions on Vercel",
   "main": "api/webhook.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "vercel-dev": "vercel dev"
