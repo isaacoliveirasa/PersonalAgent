@@ -7,8 +7,7 @@
   ],
   "functions": {
     "api/webhook.ts": {
-      "runtime": "nodejs20.x",
-      "launcherType": "esm"
+      "runtime": "nodejs20.x"
     }
   }
 }
