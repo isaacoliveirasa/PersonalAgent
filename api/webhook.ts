@@ -1,4 +1,4 @@
-import 'module-alias/register.js';
+import 'module-alias/register';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { InMemoryRunner } from '@google/adk';
 import { validateSecretToken, isAllowedUser } from '../src/security';

@@ -26,6 +26,6 @@
     "module-alias": "^2.2.3"
   },
   "_moduleAliases": {
-    "lodash-es": "node_modules/lodash"
+    "lodash-es": "lodash"
   }
 }
