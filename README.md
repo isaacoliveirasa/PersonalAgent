@@ -4,7 +4,7 @@
 
 ### An Autonomous Multimodal Assistant powered by Google ADK & Vercel KV
 
-[![Gemini](https://img.shields.io/badge/Gemini-2.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://aistudio.google.com)
+[![Gemini](https://img.shields.io/badge/Gemini-3.5%20Flash-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://aistudio.google.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vercel](https://img.shields.io/badge/Vercel-Serverless-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
 [![Telegram API](https://img.shields.io/badge/Telegram-Bot-26A69A?style=for-the-badge&logo=telegram&logoColor=white)](https://core.telegram.org/bots)
@@ -204,7 +204,7 @@ Expected output:
 ## 👨‍💻 About the Author
 
 <div align="center">  
-  Hello, my name is **Isaac Sa**. I have been developing systems for over 20 years. This project is a practical application of the knowledge I acquired when completing Google's **Agent Development Kit (ADK) course**, which I highly recommend taking! You can check it out here: [Google ADK Course](https://www.skills.google/paths?pathslistid=agents).
+  Hello, my name is <strong>Isaac Sa</strong>. I have been developing systems for over 20 years. This project is a practical application of the knowledge I acquired when completing Google's <strong>Agent Development Kit (ADK) course</strong>, which I highly recommend taking! You can check it out here: <a href="https://www.skills.google/paths?pathslistid=agents">Google ADK Course</a>.
 </div>
 
 Let's connect:
