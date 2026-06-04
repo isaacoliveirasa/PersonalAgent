@@ -1,3 +1,12 @@
+import Module from 'module';
+const realRequire = Module.prototype.require;
+Module.prototype.require = function (this: any, id: string) {
+  if (id === 'lodash-es') {
+    return realRequire.call(this, 'lodash');
+  }
+  return realRequire.apply(this, arguments as any);
+} as any;
+
 import { kv } from './memory';
 import { getGoogleOAuthClient, listUpcomingEvents, listTodayEmails } from './google';
 import { sendTelegramMessage } from './telegram';
