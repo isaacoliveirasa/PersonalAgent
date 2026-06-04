@@ -4,5 +4,11 @@
       "source": "/api/(.*)",
       "destination": "/api/$1"
     }
-  ]
+  ],
+  "functions": {
+    "api/webhook.ts": {
+      "runtime": "nodejs20.x",
+      "launcherType": "esm"
+    }
+  }
 }
